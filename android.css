@@ -1,0 +1,266 @@
+@media only screen and (max-width:600px) and (min-width:300px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+    body{
+        width:100vw;
+        height:100vh;
+        background-color: #3D087B;
+        overflow-x:hidden;
+    }
+    
+     .global{
+        height: 100vh;
+        width:100%;
+        position: relative;
+        left:0vw; 
+        overflow-x:hidden;
+        /* border: 10px solid black; */
+    } 
+    
+    .clock{
+        height: 10vh;
+        width: 30vw;
+        /* border: 5px solid black; */
+        position:absolute;
+        top:4vh;
+        right:0;
+         /* margin-top: 40px; 
+        margin-left: 100px; 
+       */
+    }
+    .clock img {
+        width:50vw;
+        height: 10vh;
+    }
+    
+
+       /* real time clock*/
+       .clockk{
+        height: 100px;
+        width: 350px;
+        border-radius: 20px;
+        /* margin: auto; */
+        /* margin-top: 20px; */
+        /* margin-right:20px; */
+        background-color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:6px;
+        position: absolute;
+        top:20vh;
+        left: 0vw;
+    }
+    
+    #shadow1{
+        height: 100px;
+        width: 280px;
+        background-color: hsla(0, 0%, 100%, 0.758);
+        border-radius: 10px;
+        position: absolute;
+        top: 22vh; 
+        left:8vw;
+        z-index: -1; 
+    } 
+    #shadow2{ 
+        height: 100px;
+        width: 220px;
+        background-color: #ad75acf4;
+        border-radius: 10px;
+        position: absolute;
+        top: 23vh; 
+        left: 16vw;
+        z-index: -2; 
+     }
+    
+    .box{
+        height: 70px;
+        width: 50px;
+        border-radius: 5px;
+        /* border: 2px solid black; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 4px 4px 0px white;
+    
+    }
+    /* /time text in clock block/ */
+    #box1{
+        font-size: 20px;
+        text-align: center;
+       
+        
+    }
+    /* /hour block/ */
+    #box2{
+        text-align: center;
+        font-size: 20px;
+        /* border: 2px solid black; */
+        background-color: #F6E2FF;
+    }
+    /* /mins block/ */
+    #box3{
+        font-size: 20px;
+        text-align: center;
+        /* border: 2px solid black; */
+        background-color: #F6E2FF;
+    }
+    /* /sec bolck/ */
+    #box4{
+        font-size: 20px;
+        /* border: 2px solid black; */
+       text-align: center;
+        background-color: #F6E2FF;
+    }
+    /* /Am-pm block/ */
+    #box5{
+        font-size: 20px;
+        text-align: center;
+        /* border: 2px solid black; */
+        background-color: #F25CFE;
+    }
+    .dot{
+        color: #F25CFE;
+        font-size: 40px;
+    } 
+    img{
+        height: 4vh;
+        width: 4vw;
+        
+        /* margin:40px 0px 0px 100px; */
+    }
+    
+    /* /message below time clock/ */
+    #grab{
+        height: 100px;
+        width: 350px;
+        background-color: #FFFFFF;
+        border-radius: 20px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size:20px;
+        color:blue;
+        font-style:oblique;
+        /* font-family: sans-serif; */
+        position: absolute;
+        top:40vh;
+        left:1vw;
+        
+    }
+ 
+    .main{
+        height: 260px;
+        width: 350px;
+        background-color: #FFFFFF;
+        padding:4px 1px 4px 1px;
+        box-sizing: border-box;
+        /* margin:30px 0px 0px 20px; */
+        border-radius: 15px;
+        position: absolute;
+        top:60vh;
+        left:1vw;
+    }
+    #wake{
+        font-size: 16px; 
+        color:blue;
+        /* margin-left: 20px;  */
+    }
+    .tim{
+        width:100px;
+        height: 45px;
+    }
+    
+    #k,#l,#g,#n{
+    width: 24px;
+    height: 24px;
+    } 
+    .good{
+        height: 200px;
+        width: 350px;
+        display: grid;
+        grid-template-columns: auto  200px;
+        grid-template-rows: 50px 50px 50px 50px auto;
+        /* margin-left: 20px; */
+        /* margin-top:0px; */
+        gap: 6px;
+        position: absolute;
+        top: 140vh;
+        left:0vw;  
+    }
+    
+    #a{
+        grid-column: 1/3;
+        font: normal normal 900 16px/16px Bauhaus Hv BT;
+        background-color: #9140B5;
+        text-align: center;
+        color: #FFFFFF;
+        /* padding: 5px; */
+        border-radius: 5px;
+    
+        
+    }
+    /* /button is .b/ */
+    .b{
+        grid-row: 2/3;
+        /* border: 2px solid black; */
+        background-image: linear-gradient(to left,#FC5EFF,#6E54EC);
+        font: normal normal 600 20px/20px Manrope;
+        text-align: center;
+        border-radius: 5px;
+        color: #FFFFFF;
+        position: relative;
+        
+    }
+    .b:hover{
+        background-image: linear-gradient(to left,#4825f9,#e411e8);
+    
+    }
+    #o::after,#o::before{
+        content: "SET ALARM";
+        transition: all;
+         /* font-size: 16px; */
+         font: normal normal 600 16px/10px Manrope;
+            
+    }
+    #o:hover:after{
+        transform: translatex(-200px); 
+    
+    }
+    #o::before{
+        content: "PARTY TIME";
+       left: -150px;
+    }
+    #o:hover:before{
+        left: 50px;
+    }
+    
+    /* /note for update set time :.c/ */
+    
+    .c{
+        /* border: 2px solid black; */
+        grid-column: 2/3;
+        grid-row: 2/4;
+        color: #FC5EFF;
+        border-radius: 5px;
+        text-align: center;
+        font: normal normal bold 16px/16px Manrope;
+        background-color: #9140B5;
+    }
+    
+    
+    #last{
+        height:95vh;
+        width: 94vw;
+        border-radius: 24px;
+        /* height: 100px; */
+        /* width: 550x; */
+        position: absolute;
+        top:72vh;
+        left:0vw;
+}
+}
